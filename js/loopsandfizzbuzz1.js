@@ -69,8 +69,6 @@ function reverse (myString) {
   return revString
 }
 
-
-
 console.assert(reverse("books") === "skoob")
 console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
 
@@ -81,9 +79,31 @@ write a function the returns a FizzBuzz string for some number N (counting up fr
 - for every number that is a multiple of 3 (but not 5), return "fizz"
 - for every number that is a multiple of 5 (but not 3), return "buzz"
 - for every number that is a multiple of 3 and 5, return "fizzbuzz" */
-/**
 
-console.assert(fizzbuzz(1) === ".")
+function fizzbuzz (inputNum) {
+	var answer = ''
+  for (var i = 1; i <= inputNum; i++) {
+		if (i % 3 !== 0 && i % 5 !== 0) {
+			answer = answer + '.'
+		}
+		else if ( i % 3 === 0) {
+			answer = answer + 'fizz'
+		}
+		else if (i % 5 === 0 && i ) {
+			answer = answer + 'buzz'
+		}
+		else if ( i % 3 === 0 && i % 5 !== 0)
+			answer = answer + 'fizzbuzz'
+	}
+
+
+	return answer
+}
+
+
+
+
+console.assert(fizzbuzz(1) === '.')
 console.assert(fizzbuzz(2) === "..")
 console.assert(fizzbuzz(3) === "..fizz")
 console.assert(fizzbuzz(5) === "..fizz.buzz")
