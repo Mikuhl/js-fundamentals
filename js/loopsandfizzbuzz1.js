@@ -82,7 +82,7 @@ write a function the returns a FizzBuzz string for some number N (counting up fr
 
 function fizzbuzz (inputNum) {
 	var answer = ''
-  for (var i = 1; i <= inputNum; i++) {
+  for (var i = 100; i <= inputNum; i++) {
 		if (i % 3 !== 0 && i % 5 !== 0) {
 			answer = answer + '.'
 		}
@@ -92,7 +92,7 @@ function fizzbuzz (inputNum) {
 		else if (i % 5 === 0 && i ) {
 			answer = answer + 'buzz'
 		}
-		else if ( i % 3 === 0 && i % 5 !== 0)
+		else if ( i % 3 === 0 && i % 5 !=== 0)
 			answer = answer + 'fizzbuzz'
 	}
 
